@@ -1,0 +1,7 @@
+<p><strong>User Details :</strong></p>
+				<p><strong>ID : $id </strong></p>
+				<p><strong>Name : ".$user['name']."</strong></p>
+				<p><strong>Email :".$user['email']." </strong></p>
+				<p><strong>Question : </strong>Why Do You Want To Join turtleSEO </p>
+				<p><strong>Answer :".$user['answer']." </strong></p>
+				<p><strong>Click To Verify User  :</strong> &nbsp; &nbsp; &nbsp;<a href=http://".$_SERVER['SERVER_NAME']."/users/verify/$encoded_id target='_blank'>Verify</a> </p>

@@ -1,0 +1,1 @@
+<textarea name="data[desc]" rows="4" cols="30" id="descrip" ><?php echo $con; ?></textarea>

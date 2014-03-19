@@ -1,0 +1,83 @@
+body {
+  font-family: arial, sans serif;
+  background:(/img/bg.png) repeat-x;
+  margin:0;
+  padding:0;
+}
+
+#statusDiv{
+	color:#C30;
+}
+
+table{
+	background-color:#FFF;
+	}
+.title{ font-weight:bold;}	
+a {
+  color:#666;
+  font-size:14px;
+  text-decoration:underline;
+}
+
+.indent {
+  margin: 5px 10px 0px 10px;
+  padding: 5px
+}
+
+.header {
+  background-color:#AAE631;
+  margin: 0px;
+  padding: 10px;
+  color: #fff;
+}
+#createOrEditDiv{
+	background-color:#FFF;
+}
+.divider {
+  background-color: #448abd;
+  height: 5px;
+}
+.subheader {
+  background-color: #83b4d8;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+}
+.sublink {
+ cursor: pointer;
+ font-weight: bold;
+ font-size: 14px;
+ padding-right: 5px;
+ padding-left: 5px;
+ padding-bottom: 10px;
+}
+
+.sublink a {
+ text-decoration: none;
+ color: #000;
+}
+
+.centered {
+  margin: auto;
+  width: 90%;
+  background-color:#09F;
+  color:#FFF;
+/*  border: 1px solid grey;*/
+  padding: 25px;
+}
+.odd {
+  background-color: #f4f4f4;
+  padding: 5px;
+}
+
+.even {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.top {
+  background-color: #dfdfdf;
+  font-weight: bold;
+  padding: 5px;
+}
+

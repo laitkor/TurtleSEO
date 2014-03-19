@@ -1,0 +1,29 @@
+<?php
+
+
+echo $javascript->link('prototype');
+echo $javascript->link('scriptaculous'); 
+?>
+
+<h1>Really neat stuff here</h1>
+<?php 
+// update both divs 
+echo $ajax->link('update divs', '/things/view/0', 
+                 array('update' => array('dynamic1', 'dynamic2'))
+                );
+echo ' | ';
+// use an effect
+echo $ajax->link('blinders', '/things/view/1', 
+                 array('update' => array('dynamic1', 'dynamic2'),
+                       'loading' => 'Effect.BlindDown(\'dynamic1\')')
+                );
+?>
+
+<hr/>
+<?php echo $ajax->div('dynamic1'); ?>
+<h2><span><?php echo $data1; ?></span></h2>
+<?php echo $ajax->divEnd('dynamic1'); ?>
+
+<?php echo $ajax->div('dynamic2'); ?>
+<h3><span><?php echo $data2; ?></span></h3>
+<?php echo $ajax->divEnd('dynamic2'); ?>

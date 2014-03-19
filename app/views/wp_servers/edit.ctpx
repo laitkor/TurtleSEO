@@ -1,0 +1,66 @@
+<style type="text/css">
+<!--
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+-->
+input[type='text']
+{width:250px;}
+input[type='password']
+{width:250px;}
+</style>
+<table style="width: 100%;">
+		<tbody>
+			<tr>
+				<td width="238" valign="top" style="width: 15em;display:none;">
+					<?php echo $this->element('menu',array('link_name' => 'blogs')); ?>				</td>
+				<td width="981" valign="top" align="left">
+							
+								
+								<?php  echo $form->create('WpServer', array('action' => 'edit'));   ?>
+							<table width="46%" border="0" cellpadding="0" cellspacing="0"  >
+							  <tr >
+								<td width="37%" height="26" colspan="2" ><?php echo $crumb; ?></td>
+							  </tr>
+							  <tr>
+								<td width="37%" height="32" bgcolor="#FFFFFF"><strong>Wp Server ID :</strong></td>
+								<td width="63%" bgcolor="#FFFFFF"> <input type="text"  size=5 disabled="disabled"  value="<?php echo $this->data['WpServer']['id'] ?>" ></td>
+							  </tr>
+							  <tr>
+								<td height="19" bgcolor="#FFFFFF"><strong>Domain Name : </strong></td>
+								<td bgcolor="#FFFFFF"><?php echo $form->input('name',array('label' =>false,'size'=>20));?></td>
+							  </tr>
+							  <tr>
+								<td height="27" bgcolor="#FFFFFF"><strong>Admin Username : </strong></td>
+								<td bgcolor="#FFFFFF"><?php echo $form->input('wp_admin_id',array('label' =>false,'size'=>20));?></td>
+							  </tr>
+							  <tr>
+								<td height="27" bgcolor="#FFFFFF"><strong>Admin Password : </strong></td>
+								<td bgcolor="#FFFFFF"><?php echo $form->input('wp_admin_password',array('label' =>false,'size'=>20,'type' => 'password'));?></td>
+							  </tr>
+							  <tr>
+								<td height="23" bgcolor="#FFFFFF"><strong>Rpc URL : </strong></td>
+								<td bgcolor="#FFFFFF"><?php echo $form->input('rpc_url',array('label' =>false,'size'=>25));?></td>
+							  </tr>
+							  <tr>
+								<td height="25" bgcolor="#FFFFFF"><strong>Active : </strong></td>
+								<td bgcolor="#FFFFFF"><?php echo $form->input('active',array('label' =>false,'type'=>'checkbox'));?>&nbsp;</td>
+							  </tr>
+							  <tr>
+								<td bgcolor="#FFFFFF">&nbsp;</td>
+								<?php echo $form->input('id', array('type'=>'hidden'));?>
+								<td bgcolor="#FFFFFF">
+								<input type="submit" value="Save"><input type="button" value="Cancel" onclick="window.location='/wp_servers/'">
+								</form>
+								<?php //echo $form->end('Save');  ?>								</td>
+							  </tr>
+				  </table>
+	  		  </td>
+			</tr>
+	</tbody>
+</table>
+
+
+
+
